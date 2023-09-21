@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "camisa",
+        "precio": 1500,
+        "img": "../img/camisa.png"
+    },
+    {
+        "id": 2,
+        "name": "pantalon",
+        "precio": 2800,
+        "img":"../img/pantalon.png"
+    },
+    {
+        "id": 3,
+        "name": "zapatillas",
+        "precio": 3400,
+        "img":"../img/zapatillas.png"
+    },
+    {
+        "id": 4,
+        "name": "gorro",
+        "precio": 820,
+        "img":"../img/gorro.png"
+    },
+    {
+        "id": 5,
+        "name": "campera",
+        "precio": 2500,
+        "img":"../img/campera.png"
+    },
+    {
+        "id": 6,
+        "name": "medias",
+        "precio": 500,
+        "img":"../img/medias.png"
+    },
+    {
+        "id": 7,
+        "name": "pantuflas",
+        "precio": 1650,
+        "img":"../img/pantuflas.png"
+    }
+]

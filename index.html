@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <!-- link del bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- link del toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- link del css -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-5">Productos</h1>
+    <div class="row mt-4">
+        <div class="col-md-8" id="contenedorTarjetas">
+        </div>
+    </div>
+</div>
+
+<!-- Botón para abrir el modal -->
+<button id="abrirModal" class="btn btn-primary">Abrir Carrito</button>
+
+<!-- Modal del carrito -->
+<div id="modalCarrito" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Carrito de Compras</h5>
+                <button type="button" id="cerrarModal" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">       
+                <ul id="listaCarrito" class="list-group">
+                    <!-- Los productos del carrito se mostrarán aquí -->
+                </ul>
+                <p>Total: $<span id="totalCarrito">0.00</span></p>
+            </div>
+            <div class="modal-footer">
+                <button id="finalizarCompra" class="btn btn-primary">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="JS/app.js"></script>
+</body>
+</html>
