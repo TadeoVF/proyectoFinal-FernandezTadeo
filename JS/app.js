@@ -72,12 +72,16 @@ let productos = [];
 
 //llamo a la funcion
 obtenerProductos()
-//
+//si no hay problemas para obtener los productos, se realiza el then
     .then(productosObtenidos => {
+        //hago que mi array productos se llene con los productos del json
         productos = productosObtenidos;
+        //llamo a la funcion para que los muestre
         mostrarProductos(productos);
     })
+    //por si hay un error
     .catch(error => {
+        //si hay un error lo, ¿consoerrorea?
         console.error(error);
     });
 
@@ -169,6 +173,7 @@ cerrarModal.addEventListener('click', () => {
 //al finalizar compra, el localstorage hace clear y se completa el ciclo
 finalizarCompra.addEventListener('click', () => {
     localStorage.clear();
+    //refresca la pagina
     location.reload();
 });
 
